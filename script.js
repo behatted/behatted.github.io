@@ -41,6 +41,7 @@ const submit = document.querySelector(".submit");
 const printZone = document.querySelector(`.results`);
 
 submit.addEventListener(`click`, function () {
+    printZone.innerText = ``;
   const link = `${redditLink.value}.json`;
   console.log(link);
   doIt(link);
